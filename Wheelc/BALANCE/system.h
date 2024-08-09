@@ -17,7 +17,7 @@
 #include "sys.h"
 #include "delay.h"
 #include "usart.h"
-
+#include "balance.h"
 #include "led.h"
 #include "oled.h"
 #include "usart.h"

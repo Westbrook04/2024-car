@@ -62,10 +62,10 @@ void Drive_Motor(float Vx,float Vy,float Vz)
 	  if (Car_Mode==Mec_Car) 
     {
 			//Inverse kinematics //运动学逆解
-			MOTOR_A.Target   = +Vy+Vx-Vz*(Axle_spacing+Wheel_spacing);
-			MOTOR_B.Target   = -Vy+Vx-Vz*(Axle_spacing+Wheel_spacing);
-			MOTOR_C.Target   = +Vy+Vx+Vz*(Axle_spacing+Wheel_spacing);
-			MOTOR_D.Target   = -Vy+Vx+Vz*(Axle_spacing+Wheel_spacing);
+			MOTOR_A.Target   = -Vy+Vx-Vz*(Axle_spacing+Wheel_spacing);
+			MOTOR_B.Target   = +Vy+Vx-Vz*(Axle_spacing+Wheel_spacing);
+			MOTOR_C.Target   = -Vy+Vx+Vz*(Axle_spacing+Wheel_spacing);
+			MOTOR_D.Target   = +Vy+Vx+Vz*(Axle_spacing+Wheel_spacing);
 		
 			//Wheel (motor) target speed limit //车轮(电机)目标速度限幅
 			MOTOR_A.Target=target_limit_float(MOTOR_A.Target,-amplitude,amplitude); 
