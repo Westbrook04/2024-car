@@ -1,0 +1,104 @@
+************************************* Invoked: 周二 7月 2 21:30:04 2024
+[0] Arguments: C:\Users\13406\Downloads\openmv-ide-windows-4.1.5.exe
+[6] Operations sanity check succeeded.
+[11] Using metadata cache from "C:/Users/13406/AppData/Local/cache\\qt-installer-framework\\79fc8fd7-13af-376d-b150-ad5d714fd38d"
+[11] Found 0 cached items.
+[11] Language: zh-CN
+[455] Loaded control script ":/metadata/installer-config/controlscript_qs.qs"
+[455] Using control script: ":/metadata/installer-config/controlscript_qs.qs"
+[2204] 正在获取最新更新信息……
+[2213] 正在加载组件脚本……
+[2817] Critical: TypeError: Value is undefined and could not be converted to an object 
+This may be solved by restarting the application after clearing the cache from: "C:/Users/13406/AppData/Local/cache\qt-installer-framework\79fc8fd7-13af-376d-b150-ad5d714fd38d"
+[7176] 无依赖项的所选组件：
+io.openmv.openmvide 
+io.openmv.openmvide.application
+[7176] Installation space required: "801.52 MB" Temporary space required: "256.00 MB" Local repository size: "0.00 字节"
+[7177] Cache and install directories are on the same volume. Volume mount point: "C:\\" Free space available: "180.02 GB"
+[7924] backup  operation: Mkdir
+[7924] 	- arguments: C:/Program Files/OpenMV IDE
+[7924] Done
+[7924] perform  operation: Mkdir
+[7924] 	- arguments: C:/Program Files/OpenMV IDE
+[7924] Done
+[7924] Starting elevated process "C:\\Users\\13406\\Downloads\\openmv-ide-windows-4.1.5.exe" with arguments " --start-server PRODUCTION,{728221a4-f8ea-47d6-b526-60990ed0c013},{b8155ae2-6372-4ab5-8970-a0b401f6224a}"
+[9649] Finished starting elevated process.
+[9753] perform  operation: Mkdir
+[9753] 	- arguments: C:/Program Files/OpenMV IDE
+[9755] Done
+[9756] 正在准备安装…
+[9757] Install size: 2 components
+[9858] 正在准备解压组件......
+[9861] backup io.openmv.openmvide.application concurrent operation: Extract
+[9861] 	- arguments: installer://io.openmv.openmvide.application/4.1.5openmv-ide-windows-4.1.5-installer-archive.7z, C:/Program Files/OpenMV IDE
+[9861] Started
+[11355] 正在解压组件......
+[11355] perform io.openmv.openmvide.application concurrent operation: Extract
+[11355] 	- arguments: installer://io.openmv.openmvide.application/4.1.5openmv-ide-windows-4.1.5-installer-archive.7z, C:/Program Files/OpenMV IDE
+[11355] Started
+[23913] 正在安装组件 OpenMV IDE Application
+[23914] backup io.openmv.openmvide.application operation: CreateShortcut
+[23914] 	- arguments: C:\Program Files\OpenMV IDE\bin\openmvide.exe, C:\Users\13406\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/OpenMV IDE.lnk, workingDirectory=C:/Users/13406
+[23917] Done
+[23917] perform io.openmv.openmvide.application operation: CreateShortcut
+[23917] 	- arguments: C:\Program Files\OpenMV IDE\bin\openmvide.exe, C:\Users\13406\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/OpenMV IDE.lnk
+[24010] Done
+[24011] backup io.openmv.openmvide.application operation: CreateShortcut
+[24011] 	- arguments: C:\Program Files\OpenMV IDE\bin\openmvide.exe, C:\Users\13406\Desktop/OpenMV IDE.lnk, workingDirectory=C:/Users/13406
+[24013] Done
+[24013] perform io.openmv.openmvide.application operation: CreateShortcut
+[24013] 	- arguments: C:\Program Files\OpenMV IDE\bin\openmvide.exe, C:\Users\13406\Desktop/OpenMV IDE.lnk
+[24038] Done
+[24038] backup io.openmv.openmvide.application operation: CreateShortcut
+[24038] 	- arguments: C:/Program Files/OpenMV IDE/OpenMVIDEUninst.exe, C:\Users\13406\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/Uninstall.lnk, workingDirectory=C:/Users/13406
+[24040] Done
+[24041] perform io.openmv.openmvide.application operation: CreateShortcut
+[24041] 	- arguments: C:/Program Files/OpenMV IDE/OpenMVIDEUninst.exe, C:\Users\13406\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\OpenMV IDE/Uninstall.lnk
+[24082] Done
+[24082] backup io.openmv.openmvide.application operation: Execute
+[24083] 	- arguments: {2,512}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\ftdi\ftdi.cmd
+[24083] Done
+[24083] perform io.openmv.openmvide.application operation: Execute
+[24083] 	- arguments: {2,512}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\ftdi\ftdi.cmd
+[24093] cmd" started, arguments: "/c C:/Program Files/OpenMV IDE\\share\\qtcreator\\drivers\\ftdi\\ftdi.cmd
+[24303] Done
+[24304] backup io.openmv.openmvide.application operation: Execute
+[24304] 	- arguments: {1,256}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\openmv\openmv.cmd
+[24304] Done
+[24304] perform io.openmv.openmvide.application operation: Execute
+[24305] 	- arguments: {1,256}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\openmv\openmv.cmd
+[24314] cmd" started, arguments: "/c C:/Program Files/OpenMV IDE\\share\\qtcreator\\drivers\\openmv\\openmv.cmd
+[24482] Done
+[24483] backup io.openmv.openmvide.application operation: Execute
+[24484] 	- arguments: {5,1280}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\arduino\arduino.cmd
+[24484] Done
+[24484] perform io.openmv.openmvide.application operation: Execute
+[24484] 	- arguments: {5,1280}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\arduino\arduino.cmd
+[24494] cmd" started, arguments: "/c C:/Program Files/OpenMV IDE\\share\\qtcreator\\drivers\\arduino\\arduino.cmd
+[25538] Done
+[25539] backup io.openmv.openmvide.application operation: Execute
+[25539] 	- arguments: {1,256}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\dfuse.cmd
+[25539] Done
+[25539] perform io.openmv.openmvide.application operation: Execute
+[25539] 	- arguments: {1,256}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\dfuse.cmd
+[25551] cmd" started, arguments: "/c C:/Program Files/OpenMV IDE\\share\\qtcreator\\drivers\\dfuse.cmd
+[25776] Done
+[25776] backup io.openmv.openmvide.application operation: Execute
+[25777] 	- arguments: {0,3010}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\vcr.cmd
+[25777] Done
+[25777] perform io.openmv.openmvide.application operation: Execute
+[25777] 	- arguments: {0,3010}, cmd, /c, C:/Program Files/OpenMV IDE\share\qtcreator\drivers\vcr.cmd
+[25785] cmd" started, arguments: "/c C:/Program Files/OpenMV IDE\\share\\qtcreator\\drivers\\vcr.cmd
+[27521] Done
+[27521] backup io.openmv.openmvide.application operation: License
+[27521] 	- arguments:
+[27521] Done
+[27521] perform io.openmv.openmvide.application operation: License
+[27521] 	- arguments:
+[27527] Done
+[27539] Writing maintenance tool: "C:/Program Files/OpenMV IDE/OpenMVIDEUninst.exe.new"
+[27540] 编写维护工具。
+[27830] Wrote permissions for maintenance tool.
+[27956] Maintenance tool hard restart: false.
+[27961] 安装已完成!
+[55242] run application as detached process: "C:\\Program Files\\OpenMV IDE\\bin\\openmvide.exe" () "C:/Users/13406"
