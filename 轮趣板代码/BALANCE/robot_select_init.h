@@ -33,7 +33,7 @@ typedef struct
 //Wheelspacing, Mec_Car is half wheelspacing
 //ÂÖ¾à ÂóÂÖÊÇÒ»°ë
 //#define MEC_wheelspacing         0.109
-#define MEC_wheelspacing         0.1600 //ĞŞÕı2021.03.30
+#define MEC_wheelspacing         0.0800 
 #define Akm_wheelspacing         0.162f
 #define Diff_wheelSpacing        0.177f
 #define Four_Mortor_wheelSpacing 0.187f
@@ -41,7 +41,7 @@ typedef struct
 
 //Axlespacing, Mec_Car is half axlespacing
 //Öá¾à ÂóÂÖÊÇÒ»°ë
-#define MEC_axlespacing           0.130
+#define MEC_axlespacing           0.080
 #define Akm_axlespacing           0.144f
 #define Diff_axlespacing          0.155f
 #define Four_Mortor__axlespacing  0.173f

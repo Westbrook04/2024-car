@@ -1,11 +1,11 @@
-import sensor, image, display, time
-
+import sensor, image, display, time,pyb
+from pyb import UART
 # 初始化摄像头
 sensor.reset()
 sensor.set_pixformat(sensor.GRAYSCALE)
 sensor.set_framesize(sensor.QQVGA2)
 sensor.skip_frames(time=2000)
-
+uart = UART(3, 9600)  # 使用 UART3，波特率为9600
 # 初始化LCD
 lcd = display.SPIDisplay()
 
@@ -53,7 +53,7 @@ while True:
         aspect_ratio = width / height if height > 0 else 0
 
         # 判断是否为十字形状的条件
-        if 0.5 < aspect_ratio < 2 and width > 20 and height > 20:
+        if 0.8 < aspect_ratio < 1.6 and width > 50 and height > 50:
             # 进一步检查十字形状
             if is_cross_shape(blob, img):
                 # 十字中心坐标
@@ -66,7 +66,7 @@ while True:
 
                 # 绘制十字中心为白色（在反转的背景上可见）
                 img.draw_cross(cx, cy, color=255)
-
+                uart.writechar(0x05)  # 发送十字路口或T字路口检测到的信号
                 # 在图像上显示坐标差
                 # 红色表示X坐标
                 img.draw_string(cx + 10, cy - 20, "X: {}".format(delta_x), color=(255, 0, 0))

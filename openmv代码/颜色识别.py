@@ -25,7 +25,7 @@ crop_x, crop_y, crop_w, crop_h = 15, 37, 81, 77  # 裁剪区域参数 (x, y, w, 
 def is_cylinder(circle):
     # 定义圆的半径在一定范围内，并且面积在一定范围内
     radius = circle[2]  # circle[2] 是半径
-    if 20 < radius < 50:
+    if 1 < radius < 160:
         return True
     return False
 
